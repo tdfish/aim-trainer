@@ -7,8 +7,8 @@ let movingTargets = [];
 const shaderLoader = new THREE.FileLoader();
 let checkerVS = '';
 let checkerFS = '';
-shaderLoader.load('../assets/shaders/checker.vs', data => checkerVS = data);
-shaderLoader.load('../assets/shaders/checker.fs', data => checkerFS = data);
+shaderLoader.load('assets/shaders/checker.vs', data => checkerVS = data);
+shaderLoader.load('assets/shaders/checker.fs', data => checkerFS = data);
 
 function createCheckerMaterial() {
     return new THREE.ShaderMaterial({
@@ -31,7 +31,7 @@ function spawnTargets(scene, useTextures = false) {
     for (let i = 0; i < 12; i++) {
         const geometry = new THREE.SphereGeometry(targetSize / 2, 32, 32);
         const material = useTextures
-            ? new THREE.MeshStandardMaterial({ map: new THREE.TextureLoader().load('../assets/textures/target.JPG'), transparent: true })
+            ? new THREE.MeshStandardMaterial({ map: new THREE.TextureLoader().load('assets/textures/target.JPG'), transparent: true })
             : new THREE.MeshStandardMaterial({ color: 0xff0000 });
         const target = new THREE.Mesh(geometry, material);
         target.position.set(
