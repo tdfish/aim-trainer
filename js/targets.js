@@ -1,4 +1,4 @@
-import * as THREE from '../libs/three.module.js';
+import * as THREE from 'libs/three.module.js';
 
 let targets = [];
 let movingTargets = [];
@@ -96,6 +96,5 @@ function clearTargets(scene) {
     targets = [];
     movingTargets = [];
 }
-
 
 export { spawnTargets, handleClick, clearTargets, movingTargets };

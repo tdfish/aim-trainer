@@ -1,4 +1,4 @@
-import * as THREE from '../libs/three.module.js';
+import * as THREE from 'libs/three.module.js';
 
 let yawObject, pitchObject;
 let currentSensitivity = 0.0005;
@@ -48,6 +48,5 @@ function onMouseMove(event, isRunning) {
 function getYawObject() {
   return yawObject;
 }
-
 
 export { initControls, getYawObject, updateSensitivity };

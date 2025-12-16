@@ -1,6 +1,6 @@
-import * as THREE from '../libs/three.module.js';
-import { spawnTargets, handleClick, clearTargets, movingTargets } from './targets.js';
-import { initControls, getYawObject, updateSensitivity } from './controls.js';
+import * as THREE from 'libs/three.module.js';
+import { spawnTargets, handleClick, clearTargets, movingTargets } from 'js/targets.js';
+import { initControls, getYawObject, updateSensitivity } from 'js/controls.js';
 
 // Globals
 let scene, camera, renderer;
@@ -274,6 +274,5 @@ function flashScore(color = '#FFD700') {
     scoreDisplay.style.color = 'white';
   }, 200);
 }
-
 
 initScene();
