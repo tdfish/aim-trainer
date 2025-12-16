@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aim Trainer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Main Menu -->
+<div id="mainMenu" class="menu">
+  <h1>Aim Trainer</h1>
+  <h2>Can you get the High Score?</h2>
+  <label for="sensitivitySlider">Mouse Sensitivity</label>
+  <input type="range" id="sensitivitySlider" min="0.00005" max="0.002" step="0.00005" value="0.0005">
+  <button id="startBtn">Start Game</button>
+  <label><input type="checkbox" id="textureToggle" checked="true"> Full Textures </label>
+</div>
+
+  <!-- Click to Begin Overlay -->
+  <div id="clickToBegin" class="overlay hidden">
+    <p>Click to Begin</p>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud" class="hud hidden">
+    <div id="timer">000</div>
+    <div id="score">Score: 0</div>
+    <div id="crosshair">+</div>
+  </div>
+
+  <!-- Finished Screen -->
+  <div id="finished" class="menu hidden">
+    <h2>Finished!</h2>
+    <p id="finalScore">Final Score: 0</p>
+    <button id="backToMenu">Play Again</button>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./js/game.js"></script>
+</body>
+</html>
