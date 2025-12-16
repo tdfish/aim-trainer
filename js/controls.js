@@ -1,4 +1,4 @@
-import * as THREE from 'libs/three.module.js';
+import * as THREE from './libs/three.module.js';
 
 let yawObject, pitchObject;
 let currentSensitivity = 0.0005;
