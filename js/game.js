@@ -14,7 +14,7 @@ let room = null;
 
 // Wall texture
 const textureLoader = new THREE.TextureLoader();
-const wallTexture = textureLoader.load('../assets/textures/wall.jpg');
+const wallTexture = textureLoader.load('assets/textures/wall.jpg');
 wallTexture.wrapS = wallTexture.wrapT = THREE.RepeatWrapping;
 wallTexture.repeat.set(2, 2);
 
